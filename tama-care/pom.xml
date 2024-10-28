@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>de.thelon</groupId>
+		<artifactId>tama</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	<artifactId>tama-care</artifactId>
+
+	<properties>
+		<docker.image.name>tama-care</docker.image.name>
+		<fabric8.version>0.45.1</fabric8.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>io.fabric8</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>${fabric8.version}</version>
+				<executions>
+					<execution>
+						<id>docker-build</id>
+						<phase>package</phase>
+						<goals>
+							<goal>build</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<images>
+						<image>
+							<name>${docker.image.name}</name>
+							<build>
+								<dockerFile>${project.basedir}/Dockerfile</dockerFile>
+							</build>
+						</image>
+					</images>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

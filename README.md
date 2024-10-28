@@ -1,5 +1,5 @@
 # git
-
+git init
 git remote add origin https://github.com/Thelon9/Tama.git
 
 # compile

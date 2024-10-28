@@ -11,7 +11,7 @@
 
     <modules>
         <module>tama-backend</module>
-        <module>tama-frontend</module>
+        <module>tama-ui</module>
         <module>tama-care</module>
     </modules>
 

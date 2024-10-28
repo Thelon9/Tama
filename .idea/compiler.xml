@@ -7,12 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="tama-frontend" />
         <module name="tama-backend" />
         <module name="tama-ui" />
         <module name="tama-care" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tama-frontend" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

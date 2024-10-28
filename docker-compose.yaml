@@ -13,9 +13,9 @@ services:
       - "8080:8080"
     networks:
       - redis-network
-  tama-frontend:
-    image: "tama-frontend:latest"
-    container_name: "tama-frontend"
+  tama-ui:
+    image: "tama-ui:latest"
+    container_name: "tama-ui"
     ports:
       - "3000:3000"
     networks:

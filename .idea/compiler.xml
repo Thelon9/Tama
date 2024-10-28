@@ -7,8 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="tama-backend" />
         <module name="tama-frontend" />
+        <module name="tama-backend" />
+        <module name="tama-ui" />
         <module name="tama-care" />
       </profile>
     </annotationProcessing>
@@ -19,6 +20,7 @@
       <module name="tama-backend" options="-parameters" />
       <module name="tama-care" options="-parameters" />
       <module name="tama-frontend" options="-parameters" />
+      <module name="tama-ui" options="-parameters" />
     </option>
   </component>
 </project>

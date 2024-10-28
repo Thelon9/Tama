@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/frontend/pom.xml" />
         <option value="$PROJECT_DIR$/tama-backend/pom.xml" />
+        <option value="$PROJECT_DIR$/tama-frontend/pom.xml" />
       </list>
     </option>
   </component>
